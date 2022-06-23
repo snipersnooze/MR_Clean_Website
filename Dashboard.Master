@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="MR_CLEAN_FINAL.Dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content=="IE=edge"/>
+<meta name="google" value="notranslate"/>
+<title>Mr Clean Dashboard</title>
+
+<link rel="stylesheet"  href="css/Dash.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+
+<section>
+        <div>
+
+            <nav class="main-menu">
+     
+ <div>
+ <a class="logo" href="Home.aspx">
+   <img src="resources/mr-clean-logo-black-and-white.png" style="width:140px; height:140px; margin-left:60px; margin-top:50px;"/>
+ </a> 
+ </div> 
+<div class="settings"></div>
+<div class="scrollbar" id="style-1">
+  
+    
+<ul id="navList" runat="server">
+  
+
+
+  
+</ul>
+
+</div> 
+ </nav>
+      </div>
+    </section>
+
+
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+
+
+  
+    </form>
+</body>
+</html>

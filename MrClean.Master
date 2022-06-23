@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MrClean.master.cs" Inherits="MR_CLEAN_FINAL.MrClean" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <!---- <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> ---->
+    <script src="js/jquery.js"></script>
+    <script src="js/QtySelector.js"></script>
+
+      
+      <!-- style css -->
+      <link rel="stylesheet" href="css/productCat.css">
+       <link href="css/StyleSheet.css" rel="Stylesheet" />
+
+     
+
+
+      <title>MR CLEAN</title>
+
+
+
+
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+      <img style="float:left; width:128px; height:128px; margin-left:200px;" src="resources/mr-clean-logo-black-and-white.png" />
+<nav>
+
+  <a href="Home.aspx">HOME</a>
+  <a href="Product-Catalog.aspx">SHOP</a>
+        <div id="checkLogged" runat="server">
+       </div>
+</nav>
+</header>
+
+
+
+    <form id="form1" runat="server">
+        <section>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                <!---- Content goes here ----->
+
+
+
+
+            </asp:ContentPlaceHolder>
+        </section>
+    </form>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+           <a href="Home.aspx"><img style="width: 128px; height: 128px;" src="resources/mr-clean-logo-black-and-white.png" /></a>
+            <p class="footer-links">
+                <a href="Home.aspx">Home</a>
+				<a href="Product-Catalog.aspx">Products</a>
+            </p>
+            <p class="footer-company-name">Uncoding © 2021</p>
+        </div>
+        <div class="footer-right">
+            <p>Contact Us</p>
+            <form>
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <a>Send</a>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
